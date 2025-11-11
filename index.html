@@ -111,6 +111,19 @@
             color: #fff;
         }
 
+        /* --- THIS IS THE NEW STYLE FOR YOUR ICON BUTTONS --- */
+        .btn-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px; /* Space between icon and text */
+        }
+        
+        .btn-icon svg {
+            width: 1.1em; /* Makes icon slightly larger than text */
+            height: 1.1em;
+            stroke-width: 2.5;
+        }
+
         /*
         ========================================
         SCROLL FADE-IN ANIMATION
@@ -355,6 +368,16 @@
         
         .social-links a:hover svg {
             color: var(--accent-color);
+        }
+
+        /* --- THIS IS THE STYLE FOR YOUR BUTTONS WRAPPER --- */
+        .hero-buttons-wrapper {
+            display: flex;
+            flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+            justify-content: center;
+            gap: 15px; /* Adds space between buttons */
+            margin-top: -10px; /* Pulls it closer to social links */
+            margin-bottom: 30px; /* Adds space below buttons */
         }
 
 
@@ -665,7 +688,7 @@
         <!-- ======== HERO SECTION ======== -->
         <section id="hero">
             <div class="hero-content">
-                <!-- IMPORTANT: Add your new "me1.jpg" RAW link -->
+                <!-- IMPORTANT: Add your "me1.jpg" RAW link -->
                 <img src="https://raw.githubusercontent.com/Jevaan10/Jevaan10.github.io/main/me1.jpg" alt="Jevaan Chandran" class="hero-pic">
                 
                 <h1>HI, I'm Jevaan Chandran</h1>
@@ -690,14 +713,29 @@
                     </a>
                 </div>
                 
-                <a href="#about" class="btn">Learn More About Me</a>
+                <!-- --- THIS IS THE NEW BUTTON WRAPPER --- -->
+                <div class="hero-buttons-wrapper">
+                    <a href="https://drive.google.com/file/d/1NJJmEy2gR938tzf8w93LucKTy1t3lqUt/view" class="btn btn-icon" target="_blank" rel="noopener noreferrer">
+                        <!-- Download Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        RESUME
+                    </a>
+                    <a href="https://drive.google.com/file/d/1YBKB3E7rXW7V-IZhqHw_YJTUfIcfmhwA/view" class="btn btn-icon" target="_blank" rel="noopener noreferrer">
+                        <!-- Download Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        CV
+                    </a>
+                    <!-- "Learn More" button removed as requested -->
+                </div>
+                <!-- --- END OF NEW BUTTON WRAPPER --- -->
+
             </div>
         </section>
 
         <!-- ======== ABOUT ME SECTION ======== -->
         <section id="about" class="container reveal">
             <div class="about-content">
-                <!-- IMPORTANT: Add your new "me2.jpg" RAW link -->
+                <!-- IMPORTANT: Add your "me2.jpg" RAW link -->
                 <img src="https://raw.githubusercontent.com/Jevaan10/Jevaan10.github.io/main/me2.jpg" alt="Full body photo of Jevaan" class="about-pic">
                 
                 <div class="about-text">
