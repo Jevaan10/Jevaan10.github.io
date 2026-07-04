@@ -111,7 +111,7 @@
             color: #fff;
         }
 
-        /* --- THIS IS THE NEW STYLE FOR YOUR ICON BUTTONS --- */
+        /* --- STYLE FOR YOUR ICON BUTTONS --- */
         .btn-icon {
             display: inline-flex;
             align-items: center;
@@ -370,7 +370,7 @@
             color: var(--accent-color);
         }
 
-        /* --- THIS IS THE STYLE FOR YOUR BUTTONS WRAPPER --- */
+        /* --- STYLE FOR YOUR BUTTONS WRAPPER --- */
         .hero-buttons-wrapper {
             display: flex;
             flex-wrap: wrap; /* Allows buttons to wrap on small screens */
@@ -432,7 +432,7 @@
         
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 40px;
         }
         
@@ -720,12 +720,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                         RESUME
                     </a>
-                    <a href="https://drive.google.com/file/d/1rW1QZx6Et-5d990tprr55Ep0i3kQP2DQ/view?usp=sharing" class="btn btn-icon" target="_blank" rel="noopener noreferrer">
-                        <!-- Download Icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                        CV
-                    </a>
-                    <!-- "Learn More" button removed as requested -->
+                    <!-- CV Button removed as requested -->
                 </div>
                 <!-- --- END OF NEW BUTTON WRAPPER --- -->
 
@@ -754,6 +749,7 @@
         <section id="skills" class="container reveal">
             <h2>Skill Expertise</h2>
             <div class="skills-grid">
+                <!-- Column 1: Languages -->
                 <div class="skill-category">
                     <h3>Languages & Databases</h3>
                     <div class="skills-list">
@@ -765,6 +761,7 @@
                     </div>
                 </div>
                 
+                <!-- Column 2: Frameworks & Tools -->
                 <div class="skill-category">
                     <h3>Frameworks & Tools</h3>
                     <div class="skills-list">
@@ -773,7 +770,18 @@
                         <span class="skill-badge">Git & GitHub</span>
                         <span class="skill-badge">Filmora</span>
                         <span class="skill-badge">Microsoft 365</span>
-                        <span class="skill-badge">Google ADK</span>
+                    </div>
+                </div>
+
+                <!-- Column 3: AI & Agentic Systems -->
+                <div class="skill-category">
+                    <h3>AI & Agentic Systems</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">AI Agents</span>
+                        <span class="skill-badge">Google Agent Development Kit (ADK)</span>
+                        <span class="skill-badge">Google AI Studio</span>
+                        <span class="skill-badge">Gemma AI</span>
+                        <span class="skill-badge">Copilot Studio</span>
                     </div>
                 </div>
             </div>
